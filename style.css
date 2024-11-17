@@ -28,7 +28,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url('/img/улица.jpg') no-repeat center center/cover;
+    background: url('img/улица.jpg') no-repeat center center/cover;
     text-align: center;
     color: #fff;
     transition: top 0.3s ease; /* Плавное движение при фиксации */
