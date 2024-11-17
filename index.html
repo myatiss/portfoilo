@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Радомир Сергеев - Видеограф</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Шапка с логотипом и навигацией -->
+<header class="hero-section">
+    <div class="logo">
+        <a href="#">Радомир</a>
+    </div>
+    <!-- Навигация слева -->
+    <div class="nav-links">
+        <a href="#about">Обо мне</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#contact">Контакты</a>
+    </div>
+    <div class="hero-content">
+        <h1>Радомир Сергеев</h1>
+        <p>Профессиональный видеограф</p>
+        <a href="#portfolio" class="button">Мои работы</a>
+    </div>
+</header>
+    
+
+    <!-- Раздел "Обо мне" -->
+<section id="about" class="about-section hidden">
+    <div class="about-content">
+        <div class="about-text">
+            <h2>Обо мне</h2>
+            <p>Я Радомир Сергеев, видеограф, увлеченный созданием запоминающихся видеопроектов. Работаю с рекламными и музыкальными видео, создаю визуальные истории для брендов. Моя цель — создавать не просто видеоролики, а полноценные визуальные истории, которые будут вызывать эмоции у зрителей.</p>
+        </div>
+        <div class="about-photo">
+            <img src="/img/фотограф.jpg" alt="Радомир Сергеев">
+        </div>
+    </div>
+</section>
+
+
+    <!-- Раздел "Портфолио" с видео -->
+    <section id="portfolio" class="portfolio-section hidden">
+        <h2>Портфолио</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+            <div class="portfolio-item">
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+            <div class="portfolio-item">
+                <video controls>
+                    <source src="video3.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+            <div class="portfolio-item">
+                <video controls>
+                    <source src="video4.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+            <div class="portfolio-item">
+                <video controls>
+                    <source src="video5.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+            <div class="portfolio-item">
+                <video controls>
+                    <source src="video6.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+        </div>
+    </section>
+
+ <!-- Раздел "Контакты" с формой заявки и контактами -->
+ <section id="contact" class="contact-section hidden">
+    <h2>Оставить заявку</h2>
+    
+    <!-- Форма заявки -->
+    <form class="contact-form" action="thank_you.html" method="get">
+        <label for="firstName">Имя:</label>
+        <input type="text" id="firstName" name="firstName" required>
+    
+        <label for="lastName">Фамилия:</label>
+        <input type="text" id="lastName" name="lastName" required>
+    
+        <label for="phone">Номер телефона:</label>
+        <input type="tel" id="phone" name="phone" required>
+    
+        <label for="message">Комментарий:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+    
+        <button type="submit" class="submit-button">Оставить заявку</button>
+    </form>
+
+    <!-- Контактные данные и иконки мессенджеров -->
+    <div class="contact-info">
+        <p>Связаться со мной через мессенджеры:</p>
+        <a href="https://wa.me/79143063692" target="_blank" class="whatsapp-link">
+            <img src="/icon/icon whatsapp.png" alt="WhatsApp" width="40">
+        </a>
+        <a href="https://t.me/79143063692" target="_blank" class="telegram-link">
+            <img src="/icon/icon telegram.png" alt="Telegram" width="40">
+        </a>
+    </div>
+</section>
+
+    <!-- Кнопка для возврата наверх -->
+    <a href="#" id="scrollToTop">
+    <img src="/icon/стрелка вверх.png" alt="Back to Top" class="scroll-to-top-img">
+    </a>
+
+
+    <!-- Подвал сайта -->
+    <footer>
+        <p>&copy; 2024 Колмогоров Айсиэн. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

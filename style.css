@@ -1,0 +1,340 @@
+/* Основные стили */
+body {
+    font-family: "Geist Mono", monospace;
+    margin: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Логотип */
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Главный экран */
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('/img/улица.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: #fff;
+    transition: top 0.3s ease; /* Плавное движение при фиксации */
+}
+
+/* Когда шапка фиксируется */
+.hero-section.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+/* Заголовок и описание */
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+}
+
+/* Кнопка */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/* Секции */
+.about-section, .portfolio-section, .contact-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Раздел "Обо мне" */
+.about-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Контейнер для текста и фото */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+/* Текстовая часть */
+.about-text {
+    flex: 1; /* Занимает всю оставшуюся ширину */
+    text-align: left;
+}
+
+/* Фото Радомира */
+.about-photo {
+    flex: 1;
+    text-align: center;
+}
+
+.about-photo img {
+    width: 100%;
+    max-width: 400px; /* Максимальная ширина фото */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Анимация появления */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Портфолио */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 20px;
+    padding-left: 100px;  /* Добавляем отступ слева на 100px */
+    padding-right: 100px; /* Добавляем отступ справа на 100px */
+}
+
+.portfolio-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.portfolio-item video:hover {
+    transform: scale(1.05);
+}
+
+/* Секция "Контакты" */
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #555;
+}
+
+/* Иконки мессенджеров */
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.contact-info img {
+    transition: transform 0.3s;
+}
+
+.contact-info a:hover img {
+    transform: scale(1.1);
+}
+
+/* Подвал */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.thank-you-section {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.5em;
+}
+
+.thank-you-section h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.thank-you-section p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/* Анимация появления */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Навигационные ссылки */
+.nav-links {
+    position: absolute;
+    top: 70px;
+    right: 100px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-family: "Geist Mono", monospace;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4a261; /* Цвет при наведении */
+}
+
+/* Стили для кнопки "Наверх" */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px; /* Расположение от нижнего края */
+    right: 20px; /* Расположение от левого края */
+    display: none; /* Изначально скрыта */
+    z-index: 1000; /* На переднем плане */
+    cursor: pointer;
+    opacity: 0; /* Начальная прозрачность */
+    transition: opacity 0.5s ease; /* Плавный переход для прозрачности */
+}
+
+/* Анимация появления стрелки */
+#scrollToTop.show {
+    display: block; /* Показываем кнопку */
+    opacity: 1; /* Убираем прозрачность */
+}
+
+/* Анимация для изображения стрелки */
+#scrollToTop img {
+    width: 50px; /* Устанавливаем нужный размер изображения */
+    height: auto;
+    transition: transform 0.3s ease; /* Плавная анимация при наведении */
+}
+
+/* Ротация стрелки при наведении */
+#scrollToTop img:hover {
+    transform: rotate(180deg); /* Поворот стрелки на 180 градусов */
+}
+
+/* Анимация при прокрутке страницы */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Поднятие вверх */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Применение анимации bounce к кнопке */
+#scrollToTop.show {
+    animation: bounce 0.6s ease-in-out infinite; /* Бесконечный эффект подпрыгивания */
+}
+
+
+
+/* Поддержка плавного прокручивания */
+html {
+    scroll-behavior: smooth;
+}
